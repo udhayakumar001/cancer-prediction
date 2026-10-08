@@ -1,0 +1,217 @@
+     index Patient Id  Age  Gender  ...  Frequent Cold  Dry Cough  Snoring   Level
+0        0         P1   33       1  ...              2          3        4     Low
+1        1        P10   17       1  ...              1          7        2  Medium
+2        2       P100   35       1  ...              6          7        2    High
+3        3      P1000   37       1  ...              6          7        5    High
+4        4       P101   46       1  ...              4          2        3    High
+..     ...        ...  ...     ...  ...            ...        ...      ...     ...
+995    995       P995   44       1  ...              4          5        3    High
+996    996       P996   37       2  ...              3          1        4    High
+997    997       P997   25       2  ...              6          7        2    High
+998    998       P998   18       2  ...              4          2        3    High
+999    999       P999   47       1  ...              6          7        2    High
+
+[1000 rows x 26 columns]
+     Age  Gender  Air Pollution  ...  Dry Cough  Snoring   Level
+0     33       1              2  ...          3        4     Low
+1     17       1              3  ...          7        2  Medium
+2     35       1              4  ...          7        2    High
+3     37       1              7  ...          7        5    High
+4     46       1              6  ...          2        3    High
+..   ...     ...            ...  ...        ...      ...     ...
+995   44       1              6  ...          5        3    High
+996   37       2              6  ...          1        4    High
+997   25       2              4  ...          7        2    High
+998   18       2              6  ...          2        3    High
+999   47       1              6  ...          7        2    High
+
+[1000 rows x 24 columns]
+               Age       Gender  ...    Dry Cough      Snoring
+count  1000.000000  1000.000000  ...  1000.000000  1000.000000
+mean     37.174000     1.402000  ...     3.853000     2.926000
+std      12.005493     0.490547  ...     2.039007     1.474686
+min      14.000000     1.000000  ...     1.000000     1.000000
+25%      27.750000     1.000000  ...     2.000000     2.000000
+50%      36.000000     1.000000  ...     4.000000     3.000000
+75%      45.000000     2.000000  ...     6.000000     4.000000
+max      73.000000     2.000000  ...     7.000000     7.000000
+
+[8 rows x 23 columns]
+<class 'pandas.DataFrame'>
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 24 columns):
+ #   Column                    Non-Null Count  Dtype
+---  ------                    --------------  -----
+ 0   Age                       1000 non-null   int64
+ 1   Gender                    1000 non-null   int64
+ 2   Air Pollution             1000 non-null   int64
+ 3   Alcohol use               1000 non-null   int64
+ 4   Dust Allergy              1000 non-null   int64
+ 5   OccuPational Hazards      1000 non-null   int64
+ 6   Genetic Risk              1000 non-null   int64
+ 7   chronic Lung Disease      1000 non-null   int64
+ 8   Balanced Diet             1000 non-null   int64
+ 9   Obesity                   1000 non-null   int64
+ 10  Smoking                   1000 non-null   int64
+ 11  Passive Smoker            1000 non-null   int64
+ 12  Chest Pain                1000 non-null   int64
+ 13  Coughing of Blood         1000 non-null   int64
+ 14  Fatigue                   1000 non-null   int64
+ 15  Weight Loss               1000 non-null   int64
+ 16  Shortness of Breath       1000 non-null   int64
+ 17  Wheezing                  1000 non-null   int64
+ 18  Swallowing Difficulty     1000 non-null   int64
+ 19  Clubbing of Finger Nails  1000 non-null   int64
+ 20  Frequent Cold             1000 non-null   int64
+ 21  Dry Cough                 1000 non-null   int64
+ 22  Snoring                   1000 non-null   int64
+ 23  Level                     1000 non-null   str  
+dtypes: int64(23), str(1)
+memory usage: 187.6 KB
+None
+Cancer Levels: <StringArray>
+['Low', 'Medium', 'High']
+Length: 3, dtype: str
+Cancer Levels: [0 1 2]
+Level datatype: int64
+                               Age    Gender  ...   Snoring     Level
+Age                       1.000000 -0.202086  ... -0.004700  0.060048
+Gender                   -0.202086  1.000000  ... -0.181618 -0.164985
+Air Pollution             0.099494 -0.246912  ... -0.021343  0.636038
+Alcohol use               0.151742 -0.227636  ...  0.122694  0.718710
+Dust Allergy              0.035202 -0.204312  ...  0.052844  0.713839
+OccuPational Hazards      0.062177 -0.192343  ...  0.022916  0.673255
+Genetic Risk              0.073151 -0.222727  ... -0.056831  0.701303
+chronic Lung Disease      0.128952 -0.205061  ...  0.043375  0.609971
+Balanced Diet             0.004863 -0.099741  ...  0.152677  0.706273
+Obesity                   0.034337 -0.123813  ...  0.039422  0.827435
+Smoking                   0.075333 -0.206924  ...  0.189055  0.519530
+Passive Smoker            0.004908 -0.184826  ...  0.247943  0.703594
+Chest Pain                0.012864 -0.218426  ...  0.140036  0.645461
+Coughing of Blood         0.053006 -0.146505  ...  0.087944  0.782092
+Fatigue                   0.095059 -0.116467  ...  0.231748  0.625114
+Weight Loss               0.106946 -0.057993  ... -0.189106  0.352738
+Shortness of Breath       0.035329 -0.045972  ... -0.159291  0.497024
+Wheezing                 -0.095354 -0.076304  ...  0.116183  0.242794
+Swallowing Difficulty    -0.105833 -0.058324  ...  0.210540  0.249142
+Clubbing of Finger Nails  0.039258 -0.034219  ... -0.017537  0.280063
+Frequent Cold            -0.012706 -0.000526  ...  0.335844  0.444017
+Dry Cough                 0.012128 -0.123001  ...  0.176146  0.373968
+Snoring                  -0.004700 -0.181618  ...  1.000000  0.289366
+Level                     0.060048 -0.164985  ...  0.289366  1.000000
+
+[24 rows x 24 columns]
+Axes(0.125,0.11;0.496x0.77)
+
+
+Axes(0.125,0.11;0.62x0.77)
+
+
+<seaborn.axisgrid.FacetGrid object at 0x000001F796103230>
+<seaborn.axisgrid.FacetGrid object at 0x000001F79850B890>
+<seaborn.axisgrid.FacetGrid object at 0x000001F79B4CEAD0>
+X train shape:  (800, 23)
+Y train shape:  (800,)
+
+Test Shape
+
+X test shape:  (200, 23)
+Y test shape:  (200,)
+Best Parameters: {'max_depth': 3, 'max_features': 'sqrt', 'max_samples': 0.4, 'min_samples_leaf': 3, 'min_samples_split': 3, 'n_estimators': 25}
+Train Data Metrics:
+Precision :  0.99
+Recall :  0.99
+Accuracy :  0.99
+F1 Score :  0.99
+R2 Score :  0.9848905152570383
+
+
+Test Data Metrics:
+Precision :  0.99
+Recall :  0.99
+Accuracy :  0.99
+F1 Score :  0.99
+R2 Score :  0.9850024371039706
+
+ [[53  2  0]
+ [ 0 63  0]
+ [ 0  0 82]]
+
+
+******************************************************
+                Classification Report
+******************************************************
+              precision    recall  f1-score   support
+
+           0       1.00      0.96      0.98        55
+           1       0.97      1.00      0.98        63
+           2       1.00      1.00      1.00        82
+
+    accuracy                           0.99       200
+   macro avg       0.99      0.99      0.99       200
+weighted avg       0.99      0.99      0.99       200
+
+******************************************************
+
+Age                         int64
+Gender                      int64
+Air Pollution               int64
+Alcohol use                 int64
+Dust Allergy                int64
+OccuPational Hazards        int64
+Genetic Risk                int64
+chronic Lung Disease        int64
+Balanced Diet               int64
+Obesity                     int64
+Smoking                     int64
+Passive Smoker              int64
+Chest Pain                  int64
+Coughing of Blood           int64
+Fatigue                     int64
+Weight Loss                 int64
+Shortness of Breath         int64
+Wheezing                    int64
+Swallowing Difficulty       int64
+Clubbing of Finger Nails    int64
+Frequent Cold               int64
+Dry Cough                   int64
+Snoring                     int64
+Level                         str
+dtype: object
+Best Parameters: {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 200, 'num_class': 3, 'num_leaves': 2, 'objective': 'multi:softmax', 'subsample': 0.01}
+Train Data Metrics:
+Precision :  0.9025
+Recall :  0.9025
+Accuracy :  0.9025
+F1 Score :  0.9025
+R2 Score :  0.8073540695272384
+
+
+Test Data Metrics:
+Precision :  0.94
+Recall :  0.94
+Accuracy :  0.94
+F1 Score :  0.94
+R2 Score :  0.8650219339357355
+
+ [[49  4  2]
+ [ 0 60  3]
+ [ 0  3 79]]
+
+
+******************************************************
+                Classification Report
+******************************************************
+              precision    recall  f1-score   support
+
+           0       1.00      0.89      0.94        55
+           1       0.90      0.95      0.92        63
+           2       0.94      0.96      0.95        82
+
+    accuracy                           0.94       200
+   macro avg       0.95      0.94      0.94       200
+weighted avg       0.94      0.94      0.94       200
+
+******************************************************
+
+Best Parameters: {'activation': 'tanh', 'alpha': 0.001, 'early_stopping': True, 'hidden_layer_sizes': 100, 'learning_rate_init': 0.001, 'max_iter': 100, 'random_state': 2, 'solver': 'adam', 'validation_fraction': 0.1}
